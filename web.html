@@ -16,15 +16,15 @@
 
 <body id="home">
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm fixed-top" style="background-color: #7C93C3;">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm sticky-top" style="background-color: #7C93C3;">
         <div class="container ">
             <a class="navbar-brand fs-3 fw-light" href="#">Shyn<span class="fw-semibold">Fatih</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto  ">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-bs-keyboard="true">
+                <div class=" navbar-nav ms-auto  ">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     <a class="nav-link " href="#about">About</a>
                     <a class="nav-link" href="#projects">Projects</a>
@@ -33,11 +33,51 @@
                 </div>
             </div>
         </div>
+    </nav> -->
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #7C93C3;">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-light" href="#">Shyn<span class="fw-semibold">Fatih</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-body" style="background-color: #7C93C3;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galery">Galerry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="footer text-white text-center fs-6 fw-lighter"
+                    style="background-color: #7C93C3;">
+                    <p>Created with <i class="bi bi-heart-fill fw-light"></i>
+                        by <a class="text-white fw-semibold text-decoration-none">SyhnFatih</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
     </nav>
     <!-- navbar end -->
 
     <!-- hero section -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center ">
         <img src="img/prf (1).jpg" alt="Fatih" class="rounded-circle img-thumbnail " />
         <h1 class="display-4">Shyn Fatih</h1>
         <p class="lead">Networking | Fulltime No Life</p>
@@ -51,8 +91,8 @@
 
     <!-- about me -->
     <section id="about">
-        <div class="container">
-            <div class="row text-center mb-3">
+        <div class="container ">
+            <div class="row text-center mb-3 placeholder-glow">
                 <div class="col">
                     <h2>About Me</h2>
                 </div>
@@ -123,12 +163,12 @@
     <!-- Prject start -->
     <section id="projects">
         <div class="container">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-3">
                 <div class="col">
                     <h2>My Projects</h2>
                 </div>
             </div>
-            <div class="row justify-content-center pb-5">
+            <div class="row justify-content-center pb-4">
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <img src="img/wifi.jpg" class="card-img-top" alt="project1">
@@ -165,7 +205,7 @@
 
     <!-- My galerry -->
     <section id="galery">
-        <div class="row justify-content-center text-center mb-3">
+        <div class="row justify-content-center text-center mb-3 pt-1">
             <div class="col">
                 <h2>My Gallery</h2>
             </div>
@@ -188,7 +228,7 @@
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="4500">
-                                <img src="untuk web portofolio/maganginfokus.jpg" class="d-block w-100" alt="...">
+                                <img src="untuk web portofolio/maganginfokus.jpg" class="d-block w-100" alt="magang">
                                 <div class="carousel-caption d-block d-md-block ">
                                     <h5>Slide Pertama</h5>
                                     <p>Mempelajari dan mempraktekan hal-hal apa saja yang akan dilakukan ketika magang.
@@ -196,28 +236,29 @@
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="4300">
-                                <img src="untuk web portofolio/naiktiang.jpg" class="d-block w-100" alt="...">
+                                <img src="untuk web portofolio/naiktiang.jpg" class="d-block w-100" alt="naiktiang">
                                 <div class="carousel-caption d-block d-md-block">
                                     <h5>Slide Kedua</h5>
                                     <p>Memeriksa kabel jaringan yang masih berfungsi pada kotak jaringan.</p>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="4500">
-                                <img src="untuk web portofolio/sambungkabel.jpg" class="d-block w-100" alt="...">
+                                <img src="untuk web portofolio/sambungkabel.jpg" class="d-block w-100"
+                                    alt="sambungkabel">
                                 <div class="carousel-caption d-block d-md-block">
                                     <h5>Slide Ketiga</h5>
                                     <p>Menyambung kabel FiberOptic yang putus menggunakan alat penyambung splicer.</p>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="4500">
-                                <img src="untuk web portofolio/skilfull.jpg" class="d-block w-100" alt="...">
+                                <img src="untuk web portofolio/skilfull.jpg" class="d-block w-100" alt="skillvul">
                                 <div class="carousel-caption d-block d-md-block">
                                     <h5>Slide Keempat</h5>
                                     <p>Mengikuti program Samsung Innovation Campus Batch 3 dari Skillvul .</p>
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="4500">
-                                <img src="untuk web portofolio/topologi  (1).jpg" class="d-block w-100" alt="...">
+                                <img src="untuk web portofolio/topologi  (1).jpg" class="d-block w-100" alt="topologi">
                                 <div class="carousel-caption d-block d-md-block">
                                     <h5>Slide Kelima</h5>
                                     <p>Membuat topologi Bus sederhana menggunakan Microsoft Word.</p>
@@ -278,18 +319,22 @@
 
     <!-- footer start -->
     <footer class="footer text-white text-center fs-4 pb-3 pt-4 fw-lighter" style="background-color: #7C93C3;">
-        <a class="text-white" href="https://instagram.com/fat.ih._"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                height="17" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <a class="text-white" href="https://instagram.com/fat.ih._">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
                 <path
                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-            </svg></a>
-        <a class="text-white" href="https://twitter.com/david_laid"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                height="17" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            </svg>
+        </a>
+        <a class="text-white" href="https://twitter.com/david_laid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-twitter-x"
+                viewBox="0 0 16 16">
                 <path
                     d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-            </svg></a>
-        <p>Created with <i class="bi bi-heart-fill fw-light"></i> by <a
-                class="text-white fw-semibold text-decoration-none">SyhnFatih</a>
+            </svg>
+        </a>
+        <p>Created with <i class="bi bi-heart-fill fw-light"></i>
+            by <a class="text-white fw-semibold text-decoration-none">SyhnFatih</a>
         </p>
     </footer>
     <!-- footer end -->

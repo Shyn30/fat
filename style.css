@@ -1,3 +1,11 @@
+body{
+    padding-left: 0;
+    margin: 0;
+}
+
+navbar .navbarnav{
+    transition: 3s;
+}
 
 /* hero style */
 .jumbotron {
