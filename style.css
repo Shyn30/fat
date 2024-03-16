@@ -1,9 +1,9 @@
-body{
-    padding-left: 0;
+*, html, body{
+    padding: 0;
     margin: 0;
 }
 
-navbar .navbarnav{
+.navbar .navbarnav{
     transition: 3s;
 }
 
